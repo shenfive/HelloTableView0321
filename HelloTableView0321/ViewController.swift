@@ -21,11 +21,11 @@ class ViewController: UIViewController ,UITableViewDataSource, UITableViewDelega
 
     //MARK: TableView Data Source & Delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 100000
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
         cell.backgroundColor = UIColor.red
         return cell
     }
