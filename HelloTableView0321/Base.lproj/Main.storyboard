@@ -18,7 +18,8 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名稱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXW-ZL-Fmt">
                                 <rect key="frame" x="16" y="20" width="343" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="81z-5U-HVs"/>
+                                    <constraint firstAttribute="height" constant="34" id="fDG-aS-elA"/>
+                                    <constraint firstAttribute="width" constant="343" id="kcU-S2-6Aq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -26,16 +27,17 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="電話" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8x-aq-kye">
                                 <rect key="frame" x="16" y="62" width="343" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="yrT-gd-jNw"/>
+                                    <constraint firstAttribute="height" constant="34" id="1B0-jb-u09"/>
+                                    <constraint firstAttribute="width" constant="343" id="zJk-wl-5Fy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-tQ-g4q">
                                 <rect key="frame" x="281" y="104" width="78" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="jbD-To-U07"/>
-                                    <constraint firstAttribute="width" constant="78" id="tyS-X6-Xi8"/>
+                                    <constraint firstAttribute="width" constant="78" id="9Mv-x0-h5H"/>
+                                    <constraint firstAttribute="height" constant="30" id="FpS-xW-7kJ"/>
                                 </constraints>
                                 <state key="normal" title="新增"/>
                                 <connections>
@@ -45,14 +47,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6bU-da-kUK" firstAttribute="trailing" secondItem="h8x-aq-kye" secondAttribute="trailing" constant="16" id="9YM-hQ-HJ2"/>
-                            <constraint firstItem="ZXW-ZL-Fmt" firstAttribute="top" secondItem="6bU-da-kUK" secondAttribute="top" constant="20" id="VkR-eK-wHO"/>
-                            <constraint firstItem="1ud-tQ-g4q" firstAttribute="trailing" secondItem="h8x-aq-kye" secondAttribute="trailing" id="YLq-Jg-Odt"/>
-                            <constraint firstItem="h8x-aq-kye" firstAttribute="top" secondItem="ZXW-ZL-Fmt" secondAttribute="bottom" constant="8" id="ZmW-6b-SbO"/>
-                            <constraint firstItem="1ud-tQ-g4q" firstAttribute="top" secondItem="h8x-aq-kye" secondAttribute="bottom" constant="8" id="b2l-lv-oF0"/>
-                            <constraint firstItem="6bU-da-kUK" firstAttribute="trailing" secondItem="ZXW-ZL-Fmt" secondAttribute="trailing" constant="16" id="gQQ-7A-GT3"/>
-                            <constraint firstItem="h8x-aq-kye" firstAttribute="leading" secondItem="6bU-da-kUK" secondAttribute="leading" constant="16" id="uJm-Md-Vlg"/>
-                            <constraint firstItem="ZXW-ZL-Fmt" firstAttribute="leading" secondItem="6bU-da-kUK" secondAttribute="leading" constant="16" id="waL-KT-9P2"/>
+                            <constraint firstItem="h8x-aq-kye" firstAttribute="leading" secondItem="6bU-da-kUK" secondAttribute="leading" constant="16" id="MEe-NP-QcA"/>
+                            <constraint firstItem="1ud-tQ-g4q" firstAttribute="top" secondItem="h8x-aq-kye" secondAttribute="bottom" constant="8" id="MKu-I5-iKA"/>
+                            <constraint firstItem="ZXW-ZL-Fmt" firstAttribute="leading" secondItem="6bU-da-kUK" secondAttribute="leading" constant="16" id="c9W-cb-kDB"/>
+                            <constraint firstItem="h8x-aq-kye" firstAttribute="top" secondItem="ZXW-ZL-Fmt" secondAttribute="bottom" constant="8" id="eSf-RH-qkK"/>
+                            <constraint firstItem="ZXW-ZL-Fmt" firstAttribute="top" secondItem="6bU-da-kUK" secondAttribute="top" constant="20" id="ite-mn-YWm"/>
+                            <constraint firstItem="1ud-tQ-g4q" firstAttribute="leading" secondItem="6bU-da-kUK" secondAttribute="leading" constant="281" id="sjn-LY-Eck"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6bU-da-kUK"/>
                     </view>

@@ -22,6 +22,25 @@ class InputViewController: UIViewController {
     @IBAction func add(_ sender: Any) {
         print(nameTF.text)
         print(phoneTF.text)
+        
+        guard let name = nameTF.text else{ return }
+        guard let phone = phoneTF.text else { return }
+        
+        if name.count < 3{
+            let alertVC = UIAlertController(title: "Error", message: "名稱最少三碼", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "我知道了", style: .cancel, handler: nil)
+            alertVC.addAction(okAction)
+            present(alertVC, animated: true, completion: nil)
+        }
+        
+        if phone.count < 8 {
+            let alertVC = UIAlertController(title: "Error", message: "電話最少八碼", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "我知道了", style: .cancel, handler: nil)
+            alertVC.addAction(okAction)
+            present(alertVC, animated: true, completion: nil)
+            return
+        }
+        
     }
     
 
