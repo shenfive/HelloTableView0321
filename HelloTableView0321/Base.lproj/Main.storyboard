@@ -19,17 +19,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="102" id="OIJ-hC-Ypy" customClass="MyTableViewCell" customModule="HelloTableView0321" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="102"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="OIJ-hC-Ypy" customClass="MyTableViewCell" customModule="HelloTableView0321" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="93.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OIJ-hC-Ypy" id="AeD-br-b7c">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am8-Ob-4Nv">
-                                                    <rect key="frame" x="24" y="11" width="49" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </switch>
                                                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="L1B-ob-SRc">
                                                     <rect key="frame" x="128" y="12" width="118" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,7 +37,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am8-Ob-4Nv">
+                                                    <rect key="frame" x="25" y="48" width="49" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="Fkv-dl-Gqr"/>
+                                                        <constraint firstAttribute="width" constant="47" id="wRo-MD-aA2"/>
+                                                    </constraints>
+                                                </switch>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="am8-Ob-4Nv" firstAttribute="leading" secondItem="AeD-br-b7c" secondAttribute="leadingMargin" constant="10" id="CpV-DI-MGx"/>
+                                                <constraint firstItem="am8-Ob-4Nv" firstAttribute="top" secondItem="AeD-br-b7c" secondAttribute="topMargin" constant="37" id="a3Q-lD-jr8"/>
+                                                <constraint firstItem="am8-Ob-4Nv" firstAttribute="top" secondItem="AeD-br-b7c" secondAttribute="topMargin" constant="37" id="kuV-oo-KjR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="am8-Ob-4Nv" secondAttribute="bottom" constant="3" id="oQz-g6-BB0"/>
+                                                <constraint firstItem="am8-Ob-4Nv" firstAttribute="leading" secondItem="AeD-br-b7c" secondAttribute="leadingMargin" constant="10" id="zIc-R2-P1c"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="myLabel" destination="Wap-M4-lvZ" id="IoG-LC-TP5"/>
