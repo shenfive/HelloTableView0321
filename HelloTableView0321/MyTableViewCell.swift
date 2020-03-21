@@ -10,8 +10,8 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var mySwitch: UISwitch!
-    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var phone: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
  

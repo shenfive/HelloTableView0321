@@ -21,12 +21,13 @@ class ViewController: UIViewController ,UITableViewDataSource, UITableViewDelega
 
     //MARK: TableView Data Source & Delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100000
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyTableViewCell
-        cell.myLabel.text = "\(indexPath.row)"
+        cell.name.text = "name"
+        cell.phone.text = "phone"
         return cell
     }
     
