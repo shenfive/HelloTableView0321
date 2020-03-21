@@ -10,14 +10,57 @@
         <!--Item-->
         <scene sceneID="qPb-YJ-T5i">
             <objects>
-                <viewController id="G9r-bT-pus" sceneMemberID="viewController">
+                <viewController id="G9r-bT-pus" customClass="InputViewController" customModule="HelloTableView0321" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dDR-on-ZEC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名稱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXW-ZL-Fmt">
+                                <rect key="frame" x="16" y="20" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="81z-5U-HVs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="電話" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8x-aq-kye">
+                                <rect key="frame" x="16" y="62" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="yrT-gd-jNw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-tQ-g4q">
+                                <rect key="frame" x="281" y="104" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jbD-To-U07"/>
+                                    <constraint firstAttribute="width" constant="78" id="tyS-X6-Xi8"/>
+                                </constraints>
+                                <state key="normal" title="新增"/>
+                                <connections>
+                                    <action selector="add:" destination="G9r-bT-pus" eventType="touchUpInside" id="Y3X-u2-edi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6bU-da-kUK" firstAttribute="trailing" secondItem="h8x-aq-kye" secondAttribute="trailing" constant="16" id="9YM-hQ-HJ2"/>
+                            <constraint firstItem="ZXW-ZL-Fmt" firstAttribute="top" secondItem="6bU-da-kUK" secondAttribute="top" constant="20" id="VkR-eK-wHO"/>
+                            <constraint firstItem="1ud-tQ-g4q" firstAttribute="trailing" secondItem="h8x-aq-kye" secondAttribute="trailing" id="YLq-Jg-Odt"/>
+                            <constraint firstItem="h8x-aq-kye" firstAttribute="top" secondItem="ZXW-ZL-Fmt" secondAttribute="bottom" constant="8" id="ZmW-6b-SbO"/>
+                            <constraint firstItem="1ud-tQ-g4q" firstAttribute="top" secondItem="h8x-aq-kye" secondAttribute="bottom" constant="8" id="b2l-lv-oF0"/>
+                            <constraint firstItem="6bU-da-kUK" firstAttribute="trailing" secondItem="ZXW-ZL-Fmt" secondAttribute="trailing" constant="16" id="gQQ-7A-GT3"/>
+                            <constraint firstItem="h8x-aq-kye" firstAttribute="leading" secondItem="6bU-da-kUK" secondAttribute="leading" constant="16" id="uJm-Md-Vlg"/>
+                            <constraint firstItem="ZXW-ZL-Fmt" firstAttribute="leading" secondItem="6bU-da-kUK" secondAttribute="leading" constant="16" id="waL-KT-9P2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6bU-da-kUK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="person.3" catalog="system" id="Av1-I9-1oc"/>
+                    <connections>
+                        <outlet property="nameTF" destination="ZXW-ZL-Fmt" id="Xbx-LH-yXK"/>
+                        <outlet property="phoneTF" destination="h8x-aq-kye" id="elZ-f3-iqg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eio-3p-8SV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,6 +144,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JUH-Cf-CmY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H58-Kh-Cq8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

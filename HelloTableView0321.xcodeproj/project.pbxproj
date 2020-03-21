@@ -14,6 +14,7 @@
 		BA8DE24E2425DA1F000787C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8DE24D2425DA1F000787C2 /* Assets.xcassets */; };
 		BA8DE2512425DA1F000787C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8DE24F2425DA1F000787C2 /* LaunchScreen.storyboard */; };
 		BA8DE2592425E095000787C2 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8DE2582425E095000787C2 /* MyTableViewCell.swift */; };
+		BA8DE25B2425EFC5000787C2 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8DE25A2425EFC5000787C2 /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BA8DE2502425DA1F000787C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA8DE2522425DA1F000787C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8DE2582425E095000787C2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		BA8DE25A2425EFC5000787C2 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BA8DE24F2425DA1F000787C2 /* LaunchScreen.storyboard */,
 				BA8DE2522425DA1F000787C2 /* Info.plist */,
 				BA8DE2582425E095000787C2 /* MyTableViewCell.swift */,
+				BA8DE25A2425EFC5000787C2 /* InputViewController.swift */,
 			);
 			path = HelloTableView0321;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8DE2492425DA1C000787C2 /* ViewController.swift in Sources */,
+				BA8DE25B2425EFC5000787C2 /* InputViewController.swift in Sources */,
 				BA8DE2592425E095000787C2 /* MyTableViewCell.swift in Sources */,
 				BA8DE2452425DA1C000787C2 /* AppDelegate.swift in Sources */,
 				BA8DE2472425DA1C000787C2 /* SceneDelegate.swift in Sources */,
