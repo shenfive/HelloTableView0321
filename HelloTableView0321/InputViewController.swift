@@ -12,16 +12,20 @@ class InputViewController: UIViewController {
 
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var phoneTF: UITextField!
+    
+    var phoneBook:[[String:String]] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        if let oldAddBook = UserDefaults.standard.value(forKey: "AddressBook") as? [[String:String]]{
+            phoneBook = oldAddBook
+            print(phoneBook)
+        }
     }
     
 
     @IBAction func add(_ sender: Any) {
-        print(nameTF.text)
-        print(phoneTF.text)
         
         guard let name = nameTF.text else{ return }
         guard let phone = phoneTF.text else { return }
@@ -40,6 +44,25 @@ class InputViewController: UIViewController {
             present(alertVC, animated: true, completion: nil)
             return
         }
+        
+        let phoneItem = ["name":name,"phone":phone]
+        phoneBook.append(phoneItem)
+        
+        UserDefaults.standard.set(phoneBook, forKey: "AddressBook")
+        UserDefaults.standard.synchronize()
+        
+        let alertVC = UIAlertController(title: "己成功新増", message: "", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "我知道了", style: .default) { (action) in
+            self.nameTF.text = nil
+            self.phoneTF.text = nil
+        }
+        alertVC.addAction(okAction)
+        present(alertVC, animated: true, completion: nil)
+        
+        
+        
+        return
+        
         
     }
     
