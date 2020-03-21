@@ -25,8 +25,8 @@ class ViewController: UIViewController ,UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
-        cell.backgroundColor = UIColor.red
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyTableViewCell
+        cell.myLabel.text = "\(indexPath.row)"
         return cell
     }
     
